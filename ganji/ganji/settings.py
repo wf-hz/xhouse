@@ -64,9 +64,9 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'ganji.pipelines.GanjiPipeline': 300,
-#}
+ITEM_PIPELINES = {
+    'ganji.pipelines.GanjiPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
@@ -88,3 +88,9 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+MYSQL_HOST = 'localhost'
+MYSQL_DBNAME = 'xhouse'
+MYSQL_USER = 'xuser'
+MYSQL_PASSWD = 'Hello12345.'
+MYSQL_PORT = 3306
