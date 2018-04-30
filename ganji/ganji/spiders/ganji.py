@@ -43,7 +43,7 @@ class GanJiSpider(scrapy.Spider):
 			yield gj
 
 		next_urls = response.xpath(".//a[@class='next']/@href").extract()
-		if len(next_url) > 0:
+		if len(next_urls) > 0:
 			next_url = self.host_name.format(next_urls[0])
 			print('*******',"start to link this url :"+ next_url,'*******')
 			time.sleep(0.01) # 休眠0.01秒
